@@ -17,6 +17,9 @@ header{
 }
 .tabs .tab a:focus, .tabs .tab a:focus.active{
   background: transparent;
+} 
+#title{
+  white-space: nowrap;
 }
 #openingQuote{
   display: flex;
@@ -39,4 +42,13 @@ img{
     header{
         min-height: 500px;
     }
+    #openingQuote{
+      margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 300px){
+  #openingQuote{
+    margin-top: 150px;
+  }
 }
