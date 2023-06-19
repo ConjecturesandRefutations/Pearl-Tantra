@@ -47,8 +47,15 @@ img{
     }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 600px){
   #openingQuote{
     margin-top: 150px;
+  }
+}
+
+
+@media screen and (max-width: 300px){
+  #openingQuote{
+    margin-top: 100px;
   }
 }
