@@ -31,6 +31,9 @@ header{
 p{
     color: rgb(104, 104, 104);
 }
+img{
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 670px){
     header{
