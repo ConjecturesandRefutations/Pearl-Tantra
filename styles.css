@@ -42,9 +42,10 @@ img{
   padding-bottom: 10px;
 }
  .labels{
-  margin-left: 50%;
-  transform: translate(-50%) !important;  
-  height: 100% !important; 
+  top: 30% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  height: 100% !important;
 } 
 .toggle-form{
   cursor: pointer;
@@ -75,6 +76,7 @@ input, textarea{
 .stars {
   font-size: 1.7rem;
   white-space: nowrap;
+  margin-top: 10px !important;
 }
 .stars i {
   color: lightgrey;
