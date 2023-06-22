@@ -52,6 +52,27 @@ img{
   cursor: pointer;
 }
 
+input, textarea{
+  text-align: center !important;
+}
+
+.rating{
+  text-align: left !important;
+}
+
+.reviews{
+  border-radius: 50% !important;
+  height: 150px !important;
+  width: 150px !important;
+  margin-left: 50% !important;
+  transform: translate(-50%) !important;
+}
+
+.starsTwo{
+  margin-left: 50% !important;
+  transform: translate(-50%) !important;
+  color: orange !important;
+}
 
 .stars {
   font-size: 1.7rem;
