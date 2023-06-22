@@ -52,6 +52,24 @@ img{
   cursor: pointer;
 }
 
+
+.stars {
+  font-size: 1.7rem;
+  white-space: nowrap;
+}
+.stars i {
+  color: lightgrey;
+  padding: 5px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+/* Dynamic Class */
+.color-star {
+  color: orange !important;
+}
+
+
 @media screen and (max-width: 670px){
     header{
         min-height: 500px;
