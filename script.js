@@ -39,24 +39,3 @@ star.addEventListener("click", () => {
     })
 })
 })
-
-// Function to handle input focus and blur events
-function handleInputFocus(event) {
-    const label = event.target.previousElementSibling;
-    label.classList.add('active');
-  }
-
-  function handleInputBlur(event) {
-    const input = event.target;
-    const label = input.previousElementSibling;
-    if (input.value === '') {
-      label.classList.remove('active');
-    }
-  }
-
-  // Add event listeners to input fields
-  const inputs = document.querySelectorAll('input[type="text"], textarea');
-  inputs.forEach((input) => {
-    input.addEventListener('focus', handleInputFocus);
-    input.addEventListener('blur', handleInputBlur);
-  });
