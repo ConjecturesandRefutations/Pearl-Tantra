@@ -41,13 +41,11 @@ img{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.labels{
-  display: flex;
+ .labels{
   margin-left: 50%;
-  transform: translate(-50%) !important;
-  align-items: center !important;
-  height: 100% !important;
-}
+  transform: translate(-50%) !important;  
+  height: 100% !important; 
+} 
 .toggle-form{
   cursor: pointer;
 }
