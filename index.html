@@ -180,6 +180,38 @@ Mapping through genetic coding intro (optional) </p>
     </div>
 </section>
 
+<!-- Reviews -->
+
+<!-- Review Form -->
+
+<section id="review" class="grey lighten-4">
+<div class="container grey-text text-darken-2 xxs3 xs4 s6">
+  <h4 class="center toggle-form">Write a Review <i class="material-icons prefix">keyboard_arrow_down</i></h4>
+  <form action="add.php" method="POST" class="white toggler">
+      <div class="row">
+          <div class="input-field col s12 m6">
+              <label class="labels" for="">Review Title</label>
+              <input type="text" name="title" value="">
+              <div class="red-text"></div>
+          </div>
+          <div class="input-field col s12 m6">
+              <label class="labels" for="">Rating</label>
+              <input type="text" name="date" value="">            
+              <div class="red-text"></div>
+          </div>
+      </div>
+      <div class="input-field">
+          <label class="labels" for="content" >Description</label>
+          <textarea id="content" name="content" class="materialize-textarea auto-resize" rows="1"></textarea>
+          <div class="red-text"></div>
+      </div>
+      <div class="center">
+          <input type="submit" name='submit' value="Submit" class="btn brand z-depth-0">
+      </div>
+  </form>
+</div>
+</section>
+
 <!-- Footer -->
 
     <footer class="page-footer grey darken-3">
@@ -203,6 +235,14 @@ Mapping through genetic coding intro (optional) </p>
       });
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy();
+
+
+  var toggleElement = document.querySelector('.toggle-form');
+  toggleElement.addEventListener('click', function() {
+    var form = document.querySelector('.toggler');
+  form.classList.toggle('hide');
+});
+
   </script>
 </body>
 </html>

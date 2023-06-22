@@ -37,6 +37,20 @@ p{
 img{
   border-radius: 5px;
 }
+#review{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.labels{
+  display: flex;
+  margin-left: 50%;
+  transform: translate(-50%) !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+.toggle-form{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 670px){
     header{
