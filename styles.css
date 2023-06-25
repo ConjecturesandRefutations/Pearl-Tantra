@@ -47,7 +47,7 @@ img{
   transform: translate(-50%, -50%) !important;
   height: 100% !important;
 } 
-.toggle-form{
+.form-header{
   cursor: pointer;
 }
 
@@ -90,6 +90,53 @@ input, textarea{
   color: orange !important;
 }
 
+.toggler{
+  width: 950px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (max-width: 1300px){
+ .toggler{
+  width: 900px;
+ }
+}
+
+@media screen and (max-width: 1200px){
+  .toggler{
+   width: 800px;
+  }
+ }
+
+ @media screen and (max-width: 900px){
+  .toggler{
+   width: 600px;
+  }
+ }
+
+ @media screen and (max-width: 660px){
+  .toggler{
+   width: 500px;
+  }
+ }
+ 
+ @media screen and (max-width: 500px){
+  .toggler{
+   width: 400px;
+  }
+ }
+
+ @media screen and (max-width: 400px){
+  .toggler{
+   width: 300px;
+  }
+ }
+
+ @media screen and (max-width: 350px){
+  .toggler{
+   width: 250px;
+  }
+ }
 
 @media screen and (max-width: 670px){
     header{
