@@ -67,6 +67,23 @@ input, textarea{
   transform: translate(-50%) !important;
 }
 
+.scroller {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.scroller:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.card{
+  min-height: 400px;
+}
+
 .starsTwo{
   margin-left: 50% !important;
   transform: translate(-50%) !important;
@@ -88,6 +105,17 @@ input, textarea{
 /* Dynamic Class */
 .color-star {
   color: orange !important;
+}
+
+.carousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-item {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .toggler{
