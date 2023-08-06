@@ -1,77 +1,118 @@
 body{
-    overflow-x: none !important;
+  overflow-x: none !important;
 }
 
 header{
-    background: url(img/yogasunset.jpg);
-    background-size: cover;
-    background-position: left;
-    height: 750px;
+  background: url(./img/yogasunset.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 750px;
 }
 .section{
-  padding-top: 4vh;
-  padding-bottom: 4vw;
+padding-top: 4vh;
+padding-bottom: 4vw;
 }
+
+
 .tabs .indicator{
-  background-color: #1a237e;
+background-color: #1a237e;
 }
 .tabs .tab a:focus, .tabs .tab a:focus.active{
-  background: transparent;
+background: transparent;
 } 
 #title{
-  white-space: nowrap;
+white-space: nowrap;
+font-size: 40px;
 }
 #openingQuote{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 275px;
-  font-size: 40px;
-  font-weight: 300;
-  color: white;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 275px;
+font-size: 40px;
+font-weight: 300;
+color: white;
+margin-left: 30px;
 }
 h2,h4,p{
-    color: rgb(104, 104, 104);
+  color: rgb(104, 104, 104);
 }
 img{
-  border-radius: 5px;
+border-radius: 5px;
 }
 #review{
-  padding-top: 10px;
-  padding-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
- .labels{
-  top: 40% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  height: 100% !important;
+
+.labels{
+top: 20% !important;
+left: 50% !important;
+transform: translate(-50%, -50%) !important;
+height: 100% !important;
 } 
-.form-header{
-  cursor: pointer;
-}
 
 input, textarea{
-  text-align: center !important;
-}
-
-.rating{
-  text-align: left !important;
+text-align: center !important;
 }
 
 .reviews{
-  border-radius: 50% !important;
-  height: 150px !important;
-  width: 150px !important;
-  margin-left: 50% !important;
-  transform: translate(-50%) !important;
+border-radius: 50% !important;
+height: 150px !important;
+width: 150px !important;
+margin-left: 50% !important;
+transform: translate(-50%) !important;
 }
 
+.starsTwo{
+margin-left: 50% !important;
+transform: translate(-50%) !important;
+color: orange !important;
+}
+
+.stars {
+font-size: 1.7rem;
+white-space: nowrap;
+margin-top: 10px !important;
+}
+.stars i {
+color: lightgrey;
+padding: 5px;
+cursor: pointer;
+transition: color .3s;
+}
+
+/* Dynamic Class */
+.color-star {
+color: orange !important;
+}
+
+.form-header{
+cursor: pointer;
+}
+
+.toggler{
+width: 950px;
+margin-left: 50%;
+transform: translate(-50%);
+}
+
+.rating::placeholder{
+  font-size: 14px;
+  text-align: center;
+}
+
+#telegram{
+  margin-left: 10px;
+}
+  
 .scroller {
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
   cursor: -moz-grab;
   cursor: -webkit-grab;
+  
 }
 
 .scroller:active {
@@ -81,109 +122,88 @@ input, textarea{
 }
 
 .card{
-  min-height: 400px;
+  min-height:300px;    
 }
 
-.starsTwo{
-  margin-left: 50% !important;
-  transform: translate(-50%) !important;
-  color: orange !important;
+.welcome{
+  background-color: #DDE4F8;
+  text-align: center;
+  color: grey;
 }
 
-.stars {
-  font-size: 1.7rem;
-  white-space: nowrap;
-  margin-top: 10px !important;
-}
-.stars i {
-  color: lightgrey;
-  padding: 5px;
-  cursor: pointer;
-  transition: color .3s;
-}
-
-/* Dynamic Class */
-.color-star {
-  color: orange !important;
-}
-
-.carousel {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.carousel-item {
-  display: inline-block;
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.toggler{
-  width: 950px;
-  margin-left: 50%;
-  transform: translate(-50%);
+.welcomeText{
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:hsla(224,66%,92%,1);#
+  color:black;
 }
 
 @media screen and (max-width: 1300px){
- .toggler{
-  width: 900px;
- }
+.toggler{
+width: 900px;
+}
 }
 
 @media screen and (max-width: 1200px){
-  .toggler{
-   width: 800px;
-  }
- }
+.toggler{
+ width: 800px;
+}
+}
 
- @media screen and (max-width: 900px){
-  .toggler{
-   width: 600px;
-  }
- }
+@media screen and (max-width: 900px){
+.toggler{
+ width: 600px;
+}
+}
 
- @media screen and (max-width: 660px){
-  .toggler{
-   width: 500px;
-  }
- }
- 
- @media screen and (max-width: 500px){
-  .toggler{
-   width: 400px;
-  }
- }
+@media screen and (max-width: 660px){
+.toggler{
+ width: 500px;
+}
+}
 
- @media screen and (max-width: 400px){
-  .toggler{
-   width: 300px;
-  }
- }
+@media screen and (max-width: 500px){
+.toggler{
+ width: 400px;
+}
+}
 
- @media screen and (max-width: 350px){
-  .toggler{
-   width: 250px;
-  }
- }
+@media screen and (max-width: 400px){
+.toggler{
+ width: 300px;
+}
+}
+
+@media screen and (max-width: 350px){
+.toggler{
+ width: 250px;
+}
+}
 
 @media screen and (max-width: 670px){
-    header{
-        min-height: 500px;
-    }
-    #openingQuote{
-      margin-top: 200px;
-    }
+  header{
+      min-height: 500px;
+  }
+  #openingQuote{
+    margin-top: 200px;
+  }
 }
 
 @media screen and (max-width: 600px){
-  #openingQuote{
-    margin-top: 150px;
-  }
+#openingQuote{
+  margin-top: 150px;
+}
 }
 
 
 @media screen and (max-width: 300px){
+#openingQuote{
+  margin-top: 100px;
+}
+}
+
+@media screen and (max-width: 500px){
   #openingQuote{
-    margin-top: 100px;
+    margin-left: 10px;
   }
 }
